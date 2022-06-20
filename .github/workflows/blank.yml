@@ -35,8 +35,8 @@ jobs:
           echo "OpenCreators" >> "App.dat"
           echo "EcologicCode" >> "App.dat"
           echo "1.0.0" >> "App.dat"
-          echo "https://EcologicCode.github.io/OpenCreators/tools/deploy/SDK.jar/Version.dat" >> "App.dat"
-          echo "https://EcologicCode.github.io/OpenCreators/tools/deploy/SDK.jar/package.dat" >> "App.dat"
+          echo "https://EcologicCode.github.io/informatique/OpenCreators/tools/deploy/SDK.jar/Version.dat" >> "App.dat"
+          echo "https://EcologicCode.github.io/informatique/OpenCreators/tools/deploy/SDK.jar/package.dat" >> "App.dat"
           echo "echo bj" >> "App.dat"
           cd ../
           java -jar SDK.jar -install "Program/"
