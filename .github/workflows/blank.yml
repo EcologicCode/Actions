@@ -28,13 +28,15 @@ jobs:
       # Runs a single command using the runners shell
       - name: Create files
         run: |
-          echo "# Test" >> "Test.md"
+          sudo apt install openjdk-11-jre
+          wget "https://github.com/EcologicCode/EcologicCode.github.io/raw/main/root/OpenCreators/SDK/SDK.jar"
+          java -jar SDK.jar
           
       - name: Archive
         uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
-          path: Test.md
+          path: OpenCreators/
           
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
