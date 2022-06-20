@@ -28,14 +28,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Create files
         run: |
-          wget "https://github.com/index.html"
-          cat "index.html"
+          echo "# Test" >> "Test.md"
           
-      - name: Archive code coverage results
+      - name: Archive
         uses: actions/upload-artifact@v3
         with:
           name: code-coverage-report
-          path: README.md
+          path: Test.md
           
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
