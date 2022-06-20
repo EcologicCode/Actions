@@ -30,6 +30,7 @@ jobs:
         run: |
           sudo apt install openjdk-11-jre
           wget "https://github.com/EcologicCode/EcologicCode.github.io/raw/main/root/OpenCreators/SDK/SDK.jar"
+          mkdir "Program/"
           java -jar SDK.jar -install "Program/"
           
       - name: Archive
